@@ -1,0 +1,4 @@
+build/
+lib/godot-cpp/build/
+lib/godot-cpp/test/bin
+project/bin/win64/
