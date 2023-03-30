@@ -1,7 +1,7 @@
 #include "./src/gdexample.h"
 
 /*
-COMPILE GODOT CPP WITH CMAKE
+TUTORIAL TO COMPILE GODOT-CPP WITH CMAKE
 
 https://aleksandrbazhin.github.io/godot/2021/06/25/GDNative-cpp-in-2k21.html
 */
