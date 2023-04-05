@@ -3,6 +3,7 @@
 
 #include <Godot.hpp>
 #include <Sprite.hpp>
+#include <Input.hpp>
 
 namespace godot
 {
@@ -12,6 +13,11 @@ namespace godot
 
     private:
         float time_passed;
+        float time_emit;
+        float amplitude;
+        float speed;
+
+        Input *_input;
 
     public:
         static void _register_methods();
@@ -20,7 +26,11 @@ namespace godot
         ~GDExample();
 
         void _init();
+        void _ready();
         void _process(float delta);
+
+        void set_speed(float speed);
+        float get_speed();
     };
 }
 
