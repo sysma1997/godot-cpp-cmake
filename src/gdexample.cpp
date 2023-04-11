@@ -4,8 +4,8 @@ using namespace godot;
 
 void GDExample::_register_methods()
 {
-    register_method("_process", &GDExample::_process);
     register_method("_ready", &GDExample::_ready);
+    register_method("_process", &GDExample::_process);
 
     register_property<GDExample, float>("amplitude", &GDExample::amplitude, 10.0f);
     register_property<GDExample, float>("speed", &GDExample::set_speed, &GDExample::get_speed, 1.0f);
@@ -14,7 +14,6 @@ void GDExample::_register_methods()
                                "node", GODOT_VARIANT_TYPE_OBJECT,
                                "new_pos", GODOT_VARIANT_TYPE_VECTOR2);
 }
-
 GDExample::GDExample() {}
 GDExample::~GDExample() {}
 

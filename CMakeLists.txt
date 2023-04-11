@@ -27,7 +27,7 @@ set(MY_COMPILER_FLAGS "-fPIC -Wwrite-strings")
 set(LINK_DIRS )
 
 # src
-file(GLOB src 
+file(GLOB_RECURSE src 
     "src/*.h" "src/*.cpp")
 
 add_library(${PROJECT_NAME} SHARED init.cpp ${src})
